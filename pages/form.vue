@@ -4,8 +4,12 @@
      
       <div>
         <div
+
+          class="flex justify-between w-full lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-1"
+
           class=" w-full "
-        >
+
+        
           <div class="shadow-inner">
             <div class="rounded-lg shadow-lg bg-white max-w-sm">
               <div class="p-8">
