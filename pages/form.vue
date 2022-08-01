@@ -69,7 +69,7 @@ export default {
            var start= document.getElementById("start").value;
            var end= document.getElementById("end").value;
            
-           alert('Starting date '+start +'   '+'Ending Date ' + end );
+           document.write('Starting date '+start +'   '+'Ending Date ' + end );
                 
         }
   },
