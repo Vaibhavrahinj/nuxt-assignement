@@ -15,15 +15,15 @@
               <div class="p-8">
                  <form @submit="formSubmit">
                 <div>
-                <span class="block text-sm font-medium text-slate-700">Start Date</span>
+                <span class="block text-sm font-medium text-slate-700">Start Time</span>
                 <br> {{startTime}}
-                <input id="start" type="date" aria-required="false"/>
+                <input id="start" type="time" aria-required="false"/>
                 </div>
 
                     <div><br>
-                <span class="block text-sm font-medium text-slate-700">End Date</span>
+                <span class="block text-sm font-medium text-slate-700">End Time</span>
                 <br> {{endTime}}
-                <input id="end" type="date" aria-required="false"/>
+                <input id="end" type="time" aria-required="false"/>
                 </div><br>
                  <button @click="formSubmit" id="btnsub" 
                   type="submit"
@@ -69,7 +69,7 @@ export default {
            var start= document.getElementById("start").value;
            var end= document.getElementById("end").value;
            
-           document.write('Starting date '+start +'   '+'Ending Date ' + end );
+           document.write('Starting Time '+start +'   '+'Ending Time ' + end );
                 
         }
   },
