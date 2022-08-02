@@ -14,7 +14,7 @@
                 <br /><br />
                 
                 <div>
-                    <button class="py-1 px-5 mr-5 bg-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white font-bold text-center rounded-md mb-3" type="submit" @click="formSubmit" id="btnsub"> Submit </button>
+                    <button class="py-1 px-5 mr-5 bg-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white font-bold text-center rounded-md mb-3" type="submit" @click="formSubmit,validateform" id="btnsub"> Submit </button>
                     <button class="py-1 px-5 bg-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white font-bold text-center rounded-md mb-3" type="reset"> Reset </button>
                 </div>
             </table>
@@ -46,6 +46,9 @@
 </template>
 <script>
 export default {
+    validateform(){  
+
+},
     data() {
         return {
             isEdit:false,
@@ -65,7 +68,7 @@ export default {
                 this.users[this.indexEdit]=this.user;
                 this.isEdit=false;
                 this.indexEdit=-1;
-                alert('Successfully Updated')
+                alert('Successfully Updated');
             }
             else{
                  this.users.push(this.user);
